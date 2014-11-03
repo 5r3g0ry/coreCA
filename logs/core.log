@@ -1,0 +1,12 @@
+21:15:45.564 [main] INFO  iMovie.coreCA.utility.DBInterface - Connecting to the database..
+21:15:45.845 [main] INFO  iMovie.coreCA.utility.DBInterface - Connection success.
+21:15:45.846 [main] INFO  iMovie.coreCA.App - Waiting for client connection request..
+21:17:28.542 [Thread-3] INFO  iMovie.coreCA.control.PacketHandler - Connection initiated with client: /127.0.0.1
+21:17:31.567 [Thread-3] INFO  iMovie.coreCA.control.PacketHandler - Received the following message from /127.0.0.1 : prova
+21:17:39.616 [Thread-3] INFO  iMovie.coreCA.control.PacketHandler - Received the following message from /127.0.0.1 : gen_cert(ab,genf)
+21:17:39.617 [Thread-5] TRACE iMovie.coreCA.utility.DBInterface - Requested user data for user: ab
+21:17:39.633 [Thread-5] TRACE iMovie.coreCA.utility.DBInterface - Wrong username/password.
+21:18:45.723 [Thread-3] INFO  iMovie.coreCA.control.PacketHandler - Received the following message from /127.0.0.1 : ge_cert
+21:19:07.556 [Thread-3] INFO  iMovie.coreCA.control.PacketHandler - Received the following message from /127.0.0.1 : gen_cert(cacca)
+21:19:16.315 [Thread-3] INFO  iMovie.coreCA.control.PacketHandler - Received the following message from /127.0.0.1 : null
+21:19:16.317 [Thread-3] INFO  iMovie.coreCA.control.PacketHandler - Connection closed with client: /127.0.0.1
