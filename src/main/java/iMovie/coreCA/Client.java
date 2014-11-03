@@ -11,7 +11,7 @@ import java.net.Socket;
  * There are two types of reply (both are text in utf-8 format): 'Error' or 'File'
  * If an 'Error' reply is received the  next packet contains text and explains the nature of the error.
  * If a 'File' reply is received the next packet contains again text. This text contains the dimension in bytes of the file in the following format: "Dim:x"
- * Then a stream of bytes is sent, there will be sent exactly x bytes, where x is the number received in the previous text message.
+ * Then a stream of bytes is sent, there will be sent exactly x bytes, where x is the number received in the previous text message
  */
 public class Client {
 
