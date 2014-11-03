@@ -74,7 +74,8 @@ public class Client {
 
     public File readFile() throws IOException {
         InputStream is = sock.getInputStream();
-        FileOutputStream fos = new FileOutputStream(baseDirectory + File.separator + current +".p12");
+        File cert = new File(baseDirectory + File.separator + current +".p12");
+        FileOutputStream fos = new FileOutputStream(cert);
         current++;
         BufferedOutputStream bos = new BufferedOutputStream(fos);
         int length = Integer.parseInt(received().split(":")[1]);
@@ -84,7 +85,7 @@ public class Client {
         bos.write(mybytearray, 0, bytesRead);
         bos.close();
         fos.close();
-        return new File("/Users/Ivy/Desktop/client/cert.cnf");
+        return cert;
     }
 
     public void closeConnection() throws IOException {
