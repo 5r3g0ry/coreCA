@@ -4,6 +4,15 @@ import java.util.*;
 import java.io.*;
 import java.net.Socket;
 
+/**
+ * Simple client to communicate with the CoreCA server.
+ * It sends the text commands as received from the command line and forward them to the server.
+ * The server then elaborate the request.
+ * There are two types of reply (both are text in utf-8 format): 'Error' or 'File'
+ * If an 'Error' reply is received the  next packet contains text and explains the nature of the error.
+ * If a 'File' reply is received the next packet contains again text. This text contains the dimension in bytes of the file in the following format: "Dim:x"
+ * Then a stream of bytes is sent, there will be sent exactly x bytes, where x is the number received in the previous text message.
+ */
 public class Client {
 
     private Socket sock;
