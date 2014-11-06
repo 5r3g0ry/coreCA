@@ -227,3 +227,6 @@ The last packet sent successfully to the server was 0 milliseconds ago. The driv
 20:13:39.850 [main] INFO  iMovie.coreCA.utility.DBInterface - Connecting to the database..
 20:13:40.124 [main] INFO  iMovie.coreCA.utility.DBInterface - Connection success.
 20:13:40.125 [main] INFO  iMovie.coreCA.CoreCAServer - Waiting for client connection request..
+20:55:38.590 [main] INFO  iMovie.coreCA.utility.DBInterface - Connecting to the database..
+20:55:38.845 [main] INFO  iMovie.coreCA.utility.DBInterface - Connection success.
+20:55:38.845 [main] INFO  iMovie.coreCA.CoreCAServer - Waiting for client connection request..

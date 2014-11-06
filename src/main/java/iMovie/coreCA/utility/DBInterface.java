@@ -1,7 +1,6 @@
 package iMovie.coreCA.utility;
 
 import com.sun.org.apache.xerces.internal.impl.dv.util.HexBin;
-import iMovie.coreCA.CoreCAServer;
 import iMovie.coreCA.exception.CertificateNotGeneratedException;
 import iMovie.coreCA.model.UserData;
 import org.apache.logging.log4j.LogManager;
@@ -97,14 +96,15 @@ public class DBInterface {
     }
 
     protected void closeConnection() {
-        if (!Thread.currentThread().getClass().isAssignableFrom(CoreCAServer.class)) {
+        LOGGER.trace("Closing the DB connection..");
+        if (!Thread.currentThread().getClass().isAssignableFrom(CleanerHook.class)) {
             return;
         }
-        LOGGER.trace("Closing the DB connection..");
         try {
             this.connection.close();
         } catch (SQLException e) {
             LOGGER.trace("Error while closing the connection.. Continuing anyway", e);
         }
+        LOGGER.trace("Connection closed.");
     }
 }
