@@ -1,11 +1,11 @@
 package iMovie.coreCA.utility;
 
+import iMovie.coreCA.exception.CertificateNotGeneratedException;
 import iMovie.coreCA.model.UserData;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-import static junit.framework.Assert.assertNull;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 
@@ -16,7 +16,7 @@ public class DBInterfaceTest {
     @Before
     public void setUp() throws Exception {
         if (testInterface == null) {
-            testInterface = new DBInterface("localhost");
+            testInterface = new DBInterface("172.16.129.130");
         }
     }
 
@@ -44,11 +44,16 @@ public class DBInterfaceTest {
      * Test against common sql injections
      * @throws Exception
      */
-    @Test
+    @Test(expected=CertificateNotGeneratedException.class)
     public void testGetUserDataInjection() throws Exception {
-        UserData sqlInjAttack = testInterface.getUserData("db' --'","");
-        assertNull(sqlInjAttack);
-        sqlInjAttack = testInterface.getUserData("db","’ or ’1’ = ’1");
-        assertNull(sqlInjAttack);
+        testInterface.getUserData("db' -- ","as");
+        assertTrue(false);
     }
+
+    @Test(expected=CertificateNotGeneratedException.class)
+    public void testGetUserDataInjection1() throws Exception {
+        testInterface.getUserData("db","’ or ’1’ = ’1");
+        assertTrue(false);
+    }
+
 }

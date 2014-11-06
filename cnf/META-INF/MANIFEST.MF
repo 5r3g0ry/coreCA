@@ -1,3 +1,3 @@
 Manifest-Version: 1.0
-Main-Class: iMovie.coreCA.App
+Main-Class: iMovie.coreCA.CoreCAServer
 

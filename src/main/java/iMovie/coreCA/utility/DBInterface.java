@@ -1,6 +1,7 @@
 package iMovie.coreCA.utility;
 
 import com.sun.org.apache.xerces.internal.impl.dv.util.HexBin;
+import iMovie.coreCA.CoreCAServer;
 import iMovie.coreCA.exception.CertificateNotGeneratedException;
 import iMovie.coreCA.model.UserData;
 import org.apache.logging.log4j.LogManager;
@@ -17,14 +18,16 @@ public class DBInterface {
 
     private static final Logger LOGGER = LogManager.getLogger(DBInterface.class.getName());
 
+    private static final String USER_QUERY = "SELECT * FROM users WHERE uid=? AND pwd=?";
+
     private Connection connection = null;
-    Statement stmt = null;
+    PreparedStatement stmt = null;
     ResultSet rs = null;
 
     public DBInterface(String ipAddress) throws SQLException {
         LOGGER.info("Connecting to the database..");
         try {
-            connection = DriverManager.getConnection("jdbc:mysql://"+ ipAddress +"/imovies?" + "user=root&password=imovie");
+            connection = DriverManager.getConnection("jdbc:mysql://" + ipAddress + "/imovies?" + "user=coreCA&password=imovie");
         } catch (SQLException ex) {
             LOGGER.error(ex);
             LOGGER.trace("SQLException: ", ex.getMessage());
@@ -47,15 +50,12 @@ public class DBInterface {
         }
         String hashPassword = HexBin.encode(messageDigest.digest(password.getBytes())).toLowerCase();
         try {
-            stmt = connection.createStatement();
-            rs = stmt.executeQuery("SELECT * FROM users WHERE uid='" + username +"' AND pwd='" + hashPassword + "'");
+            stmt = connection.prepareStatement(USER_QUERY);
+            stmt.setString(1, username);
+            stmt.setString(2, hashPassword);
+            rs = stmt.executeQuery();
             if (rs.next()) {
                 userData = new UserData(rs);
-                //Recheck for validity of the data, prevents SQL injections
-                if (!userData.getUid().equals(username) || !userData.getPwd().equals(hashPassword) || rs.next()) {
-                    LOGGER.trace("Prevented SQL injection for user = <begin-username>" + username + "<end-username> and password = <begin-password>" + password + "<end-password>");
-                    throw new CertificateNotGeneratedException(new boolean[]{false, false, false, true});
-                }
             } else {
                 LOGGER.trace("Wrong username/password.");
                 throw new CertificateNotGeneratedException(new boolean[]{true, false, false, false});
@@ -94,5 +94,17 @@ public class DBInterface {
         }
         LOGGER.trace("Data for user: " + username +" fetched.");
         return userData;
+    }
+
+    protected void closeConnection() {
+        if (!Thread.currentThread().getClass().isAssignableFrom(CoreCAServer.class)) {
+            return;
+        }
+        LOGGER.trace("Closing the DB connection..");
+        try {
+            this.connection.close();
+        } catch (SQLException e) {
+            LOGGER.trace("Error while closing the connection.. Continuing anyway", e);
+        }
     }
 }

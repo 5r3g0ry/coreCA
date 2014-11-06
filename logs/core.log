@@ -10,3 +10,220 @@
 21:19:07.556 [Thread-3] INFO  iMovie.coreCA.control.PacketHandler - Received the following message from /127.0.0.1 : gen_cert(cacca)
 21:19:16.315 [Thread-3] INFO  iMovie.coreCA.control.PacketHandler - Received the following message from /127.0.0.1 : null
 21:19:16.317 [Thread-3] INFO  iMovie.coreCA.control.PacketHandler - Connection closed with client: /127.0.0.1
+
+18:54:35.711 [main] INFO  iMovie.coreCA.utility.DBInterface - Connecting to the database..
+18:54:35.899 [main] ERROR iMovie.coreCA.utility.DBInterface - com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+18:54:35.902 [main] TRACE iMovie.coreCA.utility.DBInterface - SQLException: 
+18:54:35.903 [main] TRACE iMovie.coreCA.utility.DBInterface - SQLState: 08S01
+18:54:35.903 [main] TRACE iMovie.coreCA.utility.DBInterface - VendorError: 0
+18:54:35.914 [main] INFO  iMovie.coreCA.utility.DBInterface - Connecting to the database..
+18:54:35.919 [main] ERROR iMovie.coreCA.utility.DBInterface - com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+18:54:35.920 [main] TRACE iMovie.coreCA.utility.DBInterface - SQLException: 
+18:54:35.920 [main] TRACE iMovie.coreCA.utility.DBInterface - SQLState: 08S01
+18:54:35.920 [main] TRACE iMovie.coreCA.utility.DBInterface - VendorError: 0
+18:57:42.638 [main] INFO  iMovie.coreCA.utility.DBInterface - Connecting to the database..
+18:57:42.808 [main] ERROR iMovie.coreCA.utility.DBInterface - com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+18:57:42.809 [main] TRACE iMovie.coreCA.utility.DBInterface - SQLException: 
+18:57:42.810 [main] TRACE iMovie.coreCA.utility.DBInterface - SQLState: 08S01
+18:57:42.810 [main] TRACE iMovie.coreCA.utility.DBInterface - VendorError: 0
+18:57:42.815 [main] INFO  iMovie.coreCA.utility.DBInterface - Connecting to the database..
+18:57:42.817 [main] ERROR iMovie.coreCA.utility.DBInterface - com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+18:57:42.817 [main] TRACE iMovie.coreCA.utility.DBInterface - SQLException: 
+18:57:42.818 [main] TRACE iMovie.coreCA.utility.DBInterface - SQLState: 08S01
+18:57:42.818 [main] TRACE iMovie.coreCA.utility.DBInterface - VendorError: 0
+18:58:59.783 [main] INFO  iMovie.coreCA.utility.DBInterface - Connecting to the database..
+18:58:59.924 [main] ERROR iMovie.coreCA.utility.DBInterface - com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+18:58:59.927 [main] TRACE iMovie.coreCA.utility.DBInterface - SQLException: 
+18:58:59.928 [main] TRACE iMovie.coreCA.utility.DBInterface - SQLState: 08S01
+18:58:59.928 [main] TRACE iMovie.coreCA.utility.DBInterface - VendorError: 0
+18:58:59.937 [main] INFO  iMovie.coreCA.utility.DBInterface - Connecting to the database..
+18:58:59.940 [main] ERROR iMovie.coreCA.utility.DBInterface - com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+18:58:59.941 [main] TRACE iMovie.coreCA.utility.DBInterface - SQLException: 
+18:58:59.941 [main] TRACE iMovie.coreCA.utility.DBInterface - SQLState: 08S01
+18:58:59.941 [main] TRACE iMovie.coreCA.utility.DBInterface - VendorError: 0
+19:05:53.914 [main] INFO  iMovie.coreCA.utility.DBInterface - Connecting to the database..
+19:05:54.086 [main] ERROR iMovie.coreCA.utility.DBInterface - com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+19:05:54.089 [main] TRACE iMovie.coreCA.utility.DBInterface - SQLException: 
+19:05:54.089 [main] TRACE iMovie.coreCA.utility.DBInterface - SQLState: 08S01
+19:05:54.089 [main] TRACE iMovie.coreCA.utility.DBInterface - VendorError: 0
+19:05:54.095 [main] INFO  iMovie.coreCA.utility.DBInterface - Connecting to the database..
+19:05:54.098 [main] ERROR iMovie.coreCA.utility.DBInterface - com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+19:05:54.099 [main] TRACE iMovie.coreCA.utility.DBInterface - SQLException: 
+19:05:54.099 [main] TRACE iMovie.coreCA.utility.DBInterface - SQLState: 08S01
+19:05:54.100 [main] TRACE iMovie.coreCA.utility.DBInterface - VendorError: 0
+19:10:49.004 [main] INFO  iMovie.coreCA.utility.DBInterface - Connecting to the database..
+19:10:49.203 [main] ERROR iMovie.coreCA.utility.DBInterface - com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+19:10:49.205 [main] TRACE iMovie.coreCA.utility.DBInterface - SQLException: 
+19:10:49.206 [main] TRACE iMovie.coreCA.utility.DBInterface - SQLState: 08S01
+19:10:49.206 [main] TRACE iMovie.coreCA.utility.DBInterface - VendorError: 0
+19:10:49.210 [main] INFO  iMovie.coreCA.utility.DBInterface - Connecting to the database..
+19:10:49.214 [main] ERROR iMovie.coreCA.utility.DBInterface - com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+19:10:49.214 [main] TRACE iMovie.coreCA.utility.DBInterface - SQLException: 
+19:10:49.214 [main] TRACE iMovie.coreCA.utility.DBInterface - SQLState: 08S01
+19:10:49.215 [main] TRACE iMovie.coreCA.utility.DBInterface - VendorError: 0
+19:12:18.178 [main] INFO  iMovie.coreCA.utility.DBInterface - Connecting to the database..
+19:12:18.487 [main] INFO  iMovie.coreCA.utility.DBInterface - Connection success.
+19:12:18.488 [main] TRACE iMovie.coreCA.utility.DBInterface - Requested user data for user: db
+19:12:18.501 [main] TRACE iMovie.coreCA.utility.DBInterface - Data for user: db fetched.
+19:12:18.504 [main] TRACE iMovie.coreCA.utility.DBInterface - Requested user data for user: db' --'
+19:12:18.511 [main] TRACE iMovie.coreCA.utility.DBInterface - Wrong username/password.
+19:12:54.531 [main] INFO  iMovie.coreCA.utility.DBInterface - Connecting to the database..
+19:12:54.804 [main] INFO  iMovie.coreCA.utility.DBInterface - Connection success.
+19:12:54.805 [main] TRACE iMovie.coreCA.utility.DBInterface - Requested user data for user: db
+19:12:54.809 [main] TRACE iMovie.coreCA.utility.DBInterface - Data for user: db fetched.
+19:12:54.811 [main] TRACE iMovie.coreCA.utility.DBInterface - Requested user data for user: db' --'
+19:12:54.814 [main] TRACE iMovie.coreCA.utility.DBInterface - Wrong username/password.
+19:14:46.462 [main] INFO  iMovie.coreCA.utility.DBInterface - Connecting to the database..
+19:14:46.811 [main] INFO  iMovie.coreCA.utility.DBInterface - Connection success.
+19:14:46.812 [main] TRACE iMovie.coreCA.utility.DBInterface - Requested user data for user: db
+19:14:46.821 [main] TRACE iMovie.coreCA.utility.DBInterface - Data for user: db fetched.
+19:14:46.824 [main] TRACE iMovie.coreCA.utility.DBInterface - Requested user data for user: db' --'
+19:14:46.826 [main] TRACE iMovie.coreCA.utility.DBInterface - Wrong username/password.
+19:18:30.259 [main] INFO  iMovie.coreCA.utility.DBInterface - Connecting to the database..
+19:18:30.578 [main] INFO  iMovie.coreCA.utility.DBInterface - Connection success.
+19:18:30.578 [main] TRACE iMovie.coreCA.utility.DBInterface - Requested user data for user: db
+19:18:30.584 [main] TRACE iMovie.coreCA.utility.DBInterface - Data for user: db fetched.
+19:18:35.369 [main] TRACE iMovie.coreCA.utility.DBInterface - Requested user data for user: db' --'
+19:18:35.371 [main] TRACE iMovie.coreCA.utility.DBInterface - Wrong username/password.
+19:21:30.610 [main] INFO  iMovie.coreCA.utility.DBInterface - Connecting to the database..
+19:21:30.931 [main] INFO  iMovie.coreCA.utility.DBInterface - Connection success.
+19:21:30.932 [main] TRACE iMovie.coreCA.utility.DBInterface - Requested user data for user: db' --'
+19:21:30.936 [main] TRACE iMovie.coreCA.utility.DBInterface - Wrong username/password.
+19:21:30.938 [main] TRACE iMovie.coreCA.utility.DBInterface - Requested user data for user: db
+19:21:30.941 [main] TRACE iMovie.coreCA.utility.DBInterface - Data for user: db fetched.
+19:22:28.935 [main] INFO  iMovie.coreCA.utility.DBInterface - Connecting to the database..
+19:22:29.206 [main] INFO  iMovie.coreCA.utility.DBInterface - Connection success.
+19:22:29.206 [main] TRACE iMovie.coreCA.utility.DBInterface - Requested user data for user: db
+19:22:29.211 [main] TRACE iMovie.coreCA.utility.DBInterface - Data for user: db fetched.
+19:22:29.213 [main] TRACE iMovie.coreCA.utility.DBInterface - Requested user data for user: db' --'
+19:22:29.215 [main] TRACE iMovie.coreCA.utility.DBInterface - Wrong username/password.
+19:22:29.216 [main] TRACE iMovie.coreCA.utility.DBInterface - Requested user data for user: db
+19:22:29.217 [main] TRACE iMovie.coreCA.utility.DBInterface - Wrong username/password.
+19:24:46.007 [main] INFO  iMovie.coreCA.utility.DBInterface - Connecting to the database..
+19:24:46.330 [main] INFO  iMovie.coreCA.utility.DBInterface - Connection success.
+19:24:46.330 [main] TRACE iMovie.coreCA.utility.DBInterface - Requested user data for user: db
+19:25:03.139 [main] TRACE iMovie.coreCA.utility.DBInterface - Data for user: db fetched.
+19:25:03.142 [main] TRACE iMovie.coreCA.utility.DBInterface - Requested user data for user: db' --'
+19:25:03.143 [main] TRACE iMovie.coreCA.utility.DBInterface - Wrong username/password.
+19:25:03.144 [main] TRACE iMovie.coreCA.utility.DBInterface - Requested user data for user: db
+19:25:03.146 [main] TRACE iMovie.coreCA.utility.DBInterface - Wrong username/password.
+19:25:36.424 [main] INFO  iMovie.coreCA.utility.DBInterface - Connecting to the database..
+19:25:36.714 [main] INFO  iMovie.coreCA.utility.DBInterface - Connection success.
+19:25:36.715 [main] TRACE iMovie.coreCA.utility.DBInterface - Requested user data for user: db
+19:25:36.721 [main] TRACE iMovie.coreCA.utility.DBInterface - Data for user: db fetched.
+19:25:36.724 [main] TRACE iMovie.coreCA.utility.DBInterface - Requested user data for user: db' --
+19:25:36.752 [main] ERROR iMovie.coreCA.utility.DBInterface - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'da39a3ee5e6b4b0d3255bfef95601890afd80709'' at line 1
+19:25:36.753 [main] TRACE iMovie.coreCA.utility.DBInterface - SQLException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'da39a3ee5e6b4b0d3255bfef95601890afd80709'' at line 1
+19:25:36.754 [main] TRACE iMovie.coreCA.utility.DBInterface - SQLState: 42000
+19:25:36.754 [main] TRACE iMovie.coreCA.utility.DBInterface - VendorError: 1064
+19:25:36.754 [main] TRACE iMovie.coreCA.utility.DBInterface - Data for user: db' -- fetched.
+19:25:36.763 [main] TRACE iMovie.coreCA.utility.DBInterface - Requested user data for user: db
+19:25:36.765 [main] TRACE iMovie.coreCA.utility.DBInterface - Wrong username/password.
+19:26:35.359 [main] INFO  iMovie.coreCA.utility.DBInterface - Connecting to the database..
+19:26:35.646 [main] INFO  iMovie.coreCA.utility.DBInterface - Connection success.
+19:26:35.647 [main] TRACE iMovie.coreCA.utility.DBInterface - Requested user data for user: db
+19:26:35.652 [main] TRACE iMovie.coreCA.utility.DBInterface - Data for user: db fetched.
+19:26:35.654 [main] TRACE iMovie.coreCA.utility.DBInterface - Requested user data for user: db' --;
+19:26:35.667 [main] ERROR iMovie.coreCA.utility.DBInterface - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ';' AND pwd='da39a3ee5e6b4b0d3255bfef95601890afd80709'' at line 1
+19:26:35.668 [main] TRACE iMovie.coreCA.utility.DBInterface - SQLException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ';' AND pwd='da39a3ee5e6b4b0d3255bfef95601890afd80709'' at line 1
+19:26:35.668 [main] TRACE iMovie.coreCA.utility.DBInterface - SQLState: 42000
+19:26:35.668 [main] TRACE iMovie.coreCA.utility.DBInterface - VendorError: 1064
+19:26:35.669 [main] TRACE iMovie.coreCA.utility.DBInterface - Data for user: db' --; fetched.
+19:26:35.674 [main] TRACE iMovie.coreCA.utility.DBInterface - Requested user data for user: db
+19:26:35.676 [main] TRACE iMovie.coreCA.utility.DBInterface - Wrong username/password.
+19:27:43.043 [main] INFO  iMovie.coreCA.utility.DBInterface - Connecting to the database..
+19:27:43.384 [main] INFO  iMovie.coreCA.utility.DBInterface - Connection success.
+19:27:43.385 [main] TRACE iMovie.coreCA.utility.DBInterface - Requested user data for user: db
+19:27:43.391 [main] TRACE iMovie.coreCA.utility.DBInterface - Data for user: db fetched.
+19:27:43.393 [main] TRACE iMovie.coreCA.utility.DBInterface - Requested user data for user: db' --;
+19:27:43.417 [main] ERROR iMovie.coreCA.utility.DBInterface - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ';' AND pwd='df211ccdd94a63e0bcb9e6ae427a249484a49d60'' at line 1
+19:27:43.418 [main] TRACE iMovie.coreCA.utility.DBInterface - SQLException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ';' AND pwd='df211ccdd94a63e0bcb9e6ae427a249484a49d60'' at line 1
+19:27:43.418 [main] TRACE iMovie.coreCA.utility.DBInterface - SQLState: 42000
+19:27:43.418 [main] TRACE iMovie.coreCA.utility.DBInterface - VendorError: 1064
+19:27:43.419 [main] TRACE iMovie.coreCA.utility.DBInterface - Data for user: db' --; fetched.
+19:27:43.427 [main] TRACE iMovie.coreCA.utility.DBInterface - Requested user data for user: db
+19:27:43.428 [main] TRACE iMovie.coreCA.utility.DBInterface - Wrong username/password.
+19:28:43.298 [main] INFO  iMovie.coreCA.utility.DBInterface - Connecting to the database..
+19:28:43.599 [main] INFO  iMovie.coreCA.utility.DBInterface - Connection success.
+19:28:43.599 [main] TRACE iMovie.coreCA.utility.DBInterface - Requested user data for user: db'; --
+19:28:43.619 [main] ERROR iMovie.coreCA.utility.DBInterface - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '--' AND pwd='df211ccdd94a63e0bcb9e6ae427a249484a49d60'' at line 1
+19:28:43.620 [main] TRACE iMovie.coreCA.utility.DBInterface - SQLException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '--' AND pwd='df211ccdd94a63e0bcb9e6ae427a249484a49d60'' at line 1
+19:28:43.621 [main] TRACE iMovie.coreCA.utility.DBInterface - SQLState: 42000
+19:28:43.624 [main] TRACE iMovie.coreCA.utility.DBInterface - VendorError: 1064
+19:28:43.624 [main] TRACE iMovie.coreCA.utility.DBInterface - Data for user: db'; -- fetched.
+19:29:04.440 [main] INFO  iMovie.coreCA.utility.DBInterface - Connecting to the database..
+19:29:04.715 [main] INFO  iMovie.coreCA.utility.DBInterface - Connection success.
+19:29:04.715 [main] TRACE iMovie.coreCA.utility.DBInterface - Requested user data for user: db'; --'
+19:29:04.732 [main] ERROR iMovie.coreCA.utility.DBInterface - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '--'' AND pwd='df211ccdd94a63e0bcb9e6ae427a249484a49d60'' at line 1
+19:29:04.733 [main] TRACE iMovie.coreCA.utility.DBInterface - SQLException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '--'' AND pwd='df211ccdd94a63e0bcb9e6ae427a249484a49d60'' at line 1
+19:29:04.733 [main] TRACE iMovie.coreCA.utility.DBInterface - SQLState: 42000
+19:29:04.734 [main] TRACE iMovie.coreCA.utility.DBInterface - VendorError: 1064
+19:29:04.734 [main] TRACE iMovie.coreCA.utility.DBInterface - Data for user: db'; --' fetched.
+19:33:34.258 [main] INFO  iMovie.coreCA.utility.DBInterface - Connecting to the database..
+19:33:34.577 [main] INFO  iMovie.coreCA.utility.DBInterface - Connection success.
+19:33:34.578 [main] TRACE iMovie.coreCA.utility.DBInterface - Requested user data for user: db'; -- 
+19:33:34.588 [main] TRACE iMovie.coreCA.utility.DBInterface - Prevented SQL injection for user = <begin-username>db'; -- <end-username> and password = <begin-password>as<end-password>
+19:34:52.212 [main] INFO  iMovie.coreCA.utility.DBInterface - Connecting to the database..
+19:34:52.491 [main] INFO  iMovie.coreCA.utility.DBInterface - Connection success.
+19:34:52.491 [main] TRACE iMovie.coreCA.utility.DBInterface - Requested user data for user: db
+19:34:52.496 [main] TRACE iMovie.coreCA.utility.DBInterface - Data for user: db fetched.
+19:34:52.498 [main] TRACE iMovie.coreCA.utility.DBInterface - Requested user data for user: db'; -- 
+19:34:52.500 [main] TRACE iMovie.coreCA.utility.DBInterface - Prevented SQL injection for user = <begin-username>db'; -- <end-username> and password = <begin-password>as<end-password>
+19:34:52.501 [main] TRACE iMovie.coreCA.utility.DBInterface - Requested user data for user: db
+19:34:52.503 [main] TRACE iMovie.coreCA.utility.DBInterface - Wrong username/password.
+19:35:42.719 [main] INFO  iMovie.coreCA.utility.DBInterface - Connecting to the database..
+19:35:42.999 [main] INFO  iMovie.coreCA.utility.DBInterface - Connection success.
+19:35:43.000 [main] TRACE iMovie.coreCA.utility.DBInterface - Requested user data for user: db
+19:35:43.005 [main] TRACE iMovie.coreCA.utility.DBInterface - Data for user: db fetched.
+19:35:43.007 [main] TRACE iMovie.coreCA.utility.DBInterface - Requested user data for user: db' -- 
+19:35:43.009 [main] TRACE iMovie.coreCA.utility.DBInterface - Prevented SQL injection for user = <begin-username>db' -- <end-username> and password = <begin-password>as<end-password>
+19:35:43.013 [main] TRACE iMovie.coreCA.utility.DBInterface - Requested user data for user: db
+19:35:43.015 [main] TRACE iMovie.coreCA.utility.DBInterface - Wrong username/password.
+19:45:46.865 [main] INFO  iMovie.coreCA.utility.DBInterface - Connecting to the database..
+19:45:47.178 [main] INFO  iMovie.coreCA.utility.DBInterface - Connection success.
+19:45:47.179 [main] TRACE iMovie.coreCA.utility.DBInterface - Requested user data for user: db
+19:45:47.204 [main] TRACE iMovie.coreCA.utility.DBInterface - Data for user: db fetched.
+19:45:47.208 [main] TRACE iMovie.coreCA.utility.DBInterface - Requested user data for user: db' -- 
+19:45:47.210 [main] TRACE iMovie.coreCA.utility.DBInterface - Wrong username/password.
+19:45:47.211 [main] TRACE iMovie.coreCA.utility.DBInterface - Requested user data for user: db
+19:45:47.212 [main] TRACE iMovie.coreCA.utility.DBInterface - Wrong username/password.
+19:46:12.406 [main] INFO  iMovie.coreCA.utility.DBInterface - Connecting to the database..
+19:46:12.679 [main] INFO  iMovie.coreCA.utility.DBInterface - Connection success.
+19:46:12.679 [main] TRACE iMovie.coreCA.utility.DBInterface - Requested user data for user: db' -- 
+19:46:12.695 [main] TRACE iMovie.coreCA.utility.DBInterface - Wrong username/password.
+19:46:12.698 [main] TRACE iMovie.coreCA.utility.DBInterface - Requested user data for user: db
+19:46:12.699 [main] TRACE iMovie.coreCA.utility.DBInterface - Wrong username/password.
+19:46:12.699 [main] TRACE iMovie.coreCA.utility.DBInterface - Requested user data for user: db
+19:46:12.701 [main] TRACE iMovie.coreCA.utility.DBInterface - Data for user: db fetched.
+20:09:57.798 [main] INFO  iMovie.coreCA.utility.DBInterface - Connecting to the database..
+20:09:58.089 [main] INFO  iMovie.coreCA.utility.DBInterface - Connection success.
+20:09:58.090 [main] INFO  iMovie.coreCA.CoreCAServer - Waiting for client connection request..
+20:10:19.360 [main] INFO  iMovie.coreCA.utility.DBInterface - Connecting to the database..
+20:10:19.625 [main] INFO  iMovie.coreCA.utility.DBInterface - Connection success.
+20:10:19.625 [main] INFO  iMovie.coreCA.CoreCAServer - Waiting for client connection request..
+20:13:03.719 [main] INFO  iMovie.coreCA.utility.DBInterface - Connecting to the database..
+20:13:04.017 [main] INFO  iMovie.coreCA.utility.DBInterface - Connection success.
+20:13:04.017 [main] INFO  iMovie.coreCA.CoreCAServer - Waiting for client connection request..
+20:13:39.850 [main] INFO  iMovie.coreCA.utility.DBInterface - Connecting to the database..
+20:13:40.124 [main] INFO  iMovie.coreCA.utility.DBInterface - Connection success.
+20:13:40.125 [main] INFO  iMovie.coreCA.CoreCAServer - Waiting for client connection request..

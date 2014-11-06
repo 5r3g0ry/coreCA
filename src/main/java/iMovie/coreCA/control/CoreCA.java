@@ -67,4 +67,7 @@ public class CoreCA {
         return new File("/root/pkcs12/" + userName + ".p12");
     }
 
+    public DBInterface getDBInterface() {
+        return this.dbInterface;
+    }
 }
