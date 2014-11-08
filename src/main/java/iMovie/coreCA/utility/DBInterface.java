@@ -100,7 +100,7 @@ public class DBInterface {
         return userData;
     }
     
-      public Boolean insertCert(int serial, String pwd, File cert) throws CertificateNotGeneratedException {
+      public boolean insertCert(int serial, String pwd, File cert) throws CertificateNotGeneratedException {
         LOGGER.trace("Requested insertion for certificate with serial: " + serial);
         boolean inserted = false;
         try {
@@ -112,7 +112,7 @@ public class DBInterface {
                 inputStream = new FileInputStream(cert.getAbsolutePath());
             } catch (FileNotFoundException e) {
                 LOGGER.trace("Unable to find pkcs#12 file when uploading on the database.");
-                return null;
+                return false;
             }
             stmt.setBlob(3, inputStream);
             
