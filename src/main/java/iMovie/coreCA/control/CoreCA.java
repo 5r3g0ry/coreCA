@@ -90,9 +90,11 @@ public class CoreCA {
 
         LOGGER.trace("Certificate for user: " + userName + " generated correctly.");
 
+        File cert = new File("/root/pkcs12/" + userName + ".p12");
+        CertInserter certInserter = new CertInserter(dbInterface, certificate.getCertificateSerial(), password, cert);
+        certInserter.run();
 
-
-        return new File("/root/pkcs12/" + userName + ".p12");
+        return cert;
     }
 
 
