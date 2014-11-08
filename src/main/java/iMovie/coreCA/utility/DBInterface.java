@@ -18,6 +18,7 @@ public class DBInterface {
     private static final Logger LOGGER = LogManager.getLogger(DBInterface.class.getName());
 
     private static final String USER_QUERY = "SELECT * FROM users WHERE uid=? AND pwd=?";
+    private static final String CERT_QUERY = "INSERT into certs (serial, pwd, cert) values (?,?,?)"
 
     private Connection connection = null;
     PreparedStatement stmt = null;
@@ -93,6 +94,52 @@ public class DBInterface {
         }
         LOGGER.trace("Data for user: " + username +" fetched.");
         return userData;
+    }
+    
+      public Boolean insertCert(int serial, String pwd, File cert) throws CertificateNotGeneratedException {
+        LOGGER.trace("Requested insertion for certificate with serial: " + serial);
+        boolean inserted = false;
+        try {
+            stmt = connection.prepareStatement(CERT_QUERY);
+            stmt.setInt(1, serial);
+            stmt.setString(2, pwd);
+            InputStream inputStream = new FileInputStream(cert.getAbsolutePath());
+            stmt.setBlob(3, inputStream);
+            
+            rs = stmt.executeUpdate();
+            if (rs>0) {
+                LOGGER.trace("Certificate inserted");
+                inserted = true;
+            } 
+        } catch (SQLException ex) {
+            // handle any errors
+            LOGGER.error(ex);
+            LOGGER.trace("SQLException: " + ex.getMessage());
+            LOGGER.trace("SQLState: " + ex.getSQLState());
+            LOGGER.trace("VendorError: " + ex.getErrorCode());
+        } finally {
+            // it is a good idea to release
+            // resources in a finally{} block
+            // in reverse-order of their creation
+            // if they are no-longer needed
+            if (rs != null) {
+                try {
+                    rs.close();
+                } catch (SQLException sqlEx) {
+                    //ignore
+                }
+                rs = null;
+            }
+            if (stmt != null) {
+                try {
+                    stmt.close();
+                } catch (SQLException sqlEx) {
+                    // ignore
+                }
+                stmt = null;
+            }
+        }
+        return inserted;
     }
 
     protected void closeConnection() {
