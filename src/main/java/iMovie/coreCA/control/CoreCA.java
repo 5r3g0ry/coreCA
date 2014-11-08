@@ -42,7 +42,7 @@ public class CoreCA {
             throw new CertificateNotGeneratedException(new boolean[]{false, false, false, false});
         }
 
-        File confFile = null;
+        File confFile;
         Certificate certificate = new Certificate(userData);
 
         try {
@@ -95,25 +95,31 @@ public class CoreCA {
         return new File("/root/pkcs12/" + userName + ".p12");
     }
 
-    /**
-     * Revoke the last valid certificate for the user provided as Input
+
+     /** Revoke the last valid certificate for the user provided as Input
 
      * @return
      * @throws CertificateNotGeneratedException
      */
-    /*
     public boolean revokeCertificate(String userName, String password) throws CertificateNotGeneratedException {
 
         UserData userData = dbInterface.getUserData(userName, password);
 
         File cert;
+        Certificate certificate = new Certificate(userData);
         try {
-            cert = new Certificate(userData).getCertificateFile();
+            cert = certificate.getCertificateFile();
+            if (!certificate.getStatus().equals(CertStatus.VALID)) {
+                LOGGER.trace("Requested to revoke certificate for user " + userName + " but there are not valid certificates for the user to revoke.");
+                return false;
+            }
         } catch (IOException e) {
             LOGGER.trace("IO Error prevent from retrieving user certificate file.", e);
             //Consider throwing an error here instead of a normal exit
             return false;
         }
+
+
 
         Process certRev;
         try {
@@ -132,19 +138,19 @@ public class CoreCA {
             }
         }
 
-
         try {
-            if (lastSerial + 1 != getCrlSerial()) {
+            if (!certificate.getStatus().equals(CertStatus.REVOKED)) {
+                //TODO: check also the certificate revocation list
+                LOGGER.info("Unable to revoke the user certificate.. Sorry");
                 return false;
             }
-        } catch (FileNotFoundException e) {
-            LOGGER.trace("Unable to read the current revocation serial number after the certificate revocation process.. Someone might have removed it.", e);
+        } catch (IOException e) {
+            LOGGER.trace("Unable to read the index file.");
             return false;
         }
 
         return true;
     }
-    **/
 
     public DBInterface getDBInterface() {
         return this.dbInterface;

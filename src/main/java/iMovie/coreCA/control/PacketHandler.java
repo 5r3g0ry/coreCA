@@ -64,11 +64,11 @@ public class PacketHandler extends Thread {
         }
 
         if ("gen_cert".equals(parts[0])) {
-            pkcs = coreCA.generateCertificate(parts[0], parts[1]);
+            pkcs = coreCA.generateCertificate(parts[1], parts[2]);
         }
 
         if ("rev_cert".equals(parts[0])) {
-            LOGGER.info("Requested to revoke a certificate, the operation is not yet supported.");
+            coreCA.revokeCertificate(parts[1], parts[2]);
         }
 
         return pkcs;

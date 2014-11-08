@@ -6,6 +6,10 @@ import iMovie.coreCA.model.UserData;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.InputStream;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.sql.*;
@@ -18,7 +22,7 @@ public class DBInterface {
     private static final Logger LOGGER = LogManager.getLogger(DBInterface.class.getName());
 
     private static final String USER_QUERY = "SELECT * FROM users WHERE uid=? AND pwd=?";
-    private static final String CERT_QUERY = "INSERT into certs (serial, pwd, cert) values (?,?,?)"
+    private static final String CERT_QUERY = "INSERT into certs (serial, pwd, cert) values (?,?,?)";
 
     private Connection connection = null;
     PreparedStatement stmt = null;
@@ -103,11 +107,17 @@ public class DBInterface {
             stmt = connection.prepareStatement(CERT_QUERY);
             stmt.setInt(1, serial);
             stmt.setString(2, pwd);
-            InputStream inputStream = new FileInputStream(cert.getAbsolutePath());
+            InputStream inputStream = null;
+            try {
+                inputStream = new FileInputStream(cert.getAbsolutePath());
+            } catch (FileNotFoundException e) {
+                LOGGER.trace("Unable to find pkcs#12 file when uploading on the database.");
+                return null;
+            }
             stmt.setBlob(3, inputStream);
             
-            rs = stmt.executeUpdate();
-            if (rs>0) {
+            int insertedRows = stmt.executeUpdate();
+            if (insertedRows > 0) {
                 LOGGER.trace("Certificate inserted");
                 inserted = true;
             } 
