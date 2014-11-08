@@ -20,7 +20,7 @@ public class CoreCAServer {
 
     public static void main( String[] args ) throws IOException, SQLException {
         ServerSocket serverSocket = new ServerSocket(PORT);
-        CoreCA coreCA = new CoreCA(new DBInterface("172.16.129.130"));
+        CoreCA coreCA = new CoreCA(new DBInterface("172.16.129.131"));
         Runtime.getRuntime().addShutdownHook(new CleanerHook(coreCA));
         LOGGER.info("Waiting for client connection request..");
         while (true) {

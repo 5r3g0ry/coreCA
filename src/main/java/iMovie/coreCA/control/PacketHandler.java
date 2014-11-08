@@ -58,18 +58,13 @@ public class PacketHandler extends Thread {
             return null;
         }
 
-        String[] parts = input.split("\\(");
-        if (parts.length != 2) {
-            return null;
-        }
-        String[] args = parts[1].replace(")", "").split(",");
-
-        if (args.length != 2) {
+        String[] parts = input.split(" ");
+        if (parts.length != 3) {
             return null;
         }
 
         if ("gen_cert".equals(parts[0])) {
-            pkcs = coreCA.generateCertificate(args[0], args[1]);
+            pkcs = coreCA.generateCertificate(parts[0], parts[1]);
         }
 
         if ("rev_cert".equals(parts[0])) {
